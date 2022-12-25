@@ -1,1 +1,33 @@
 <!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript_Lab1</title>
+</head>
+<body>
+	
+	<script>
+		var num1;
+		var num2;
+		var sum;
+		num1 = window.prompt("Enter first integer");
+		num1 = parseInt(num1);
+		num2 = window.prompt("Enter second integer");
+		num2 = parseInt(num2);
+		if(num1 > num2){
+			document.body.style.backgroundColor = 'lightblue';
+			document.writeln(num1 + " > " + num2);
+		}else if(num1 < num2){
+			document.body.style.backgroundColor = 'lightgreen';
+			document.writeln(num2 + " > " + num1);
+		}else if(num1 == num2){
+			document.body.style.backgroundColor = 'lightyellow';
+			document.writeln(num1 + " == " + num2);
+		}
+		
+	</script>
+	<p>
+	<input type = "button" value = "first input" onClick = "alert(num1)">
+	<input type = "button" value = "second input" onClick = "alert(num2)">
+	</p>
+</body>
+</html>
